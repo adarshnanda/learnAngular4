@@ -2,11 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
-//import {NewCmpComponent} from './newComponent/new-cmp.component';
+import {NewCmpComponent} from './newComponent/new-cmp.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NewCmpComponent
   ],
   imports: [
     BrowserModule
