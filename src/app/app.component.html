@@ -29,4 +29,19 @@
   	<new-cmp></new-cmp>
   	<new-cmp></new-cmp>
   </div>
+  <span *ngIf="displayMonths;then display else doNotDisplayMonths"></span>
+
+<ng-template #display>
+	<div style="margin-top: 50px"> Months :
+		<select [(ngModel)]="month">
+      		<option *ngFor="let i of months">{{i}}</option>
+   		</select>
+	</div>
+	<div>Selected Month={{month}}</div>
+</ng-template>
+<ng-template #doNotDisplayMonths>
+   		<div style="margin-top: 50px">
+   			Months unavailable at this time
+   		</div>
+</ng-template>
 </div>

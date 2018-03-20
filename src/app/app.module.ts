@@ -3,6 +3,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {NewCmpComponent} from './newComponent/new-cmp.component';
+import { FormsModule } from '@angular/forms'; //without this ngModel wont work
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import {NewCmpComponent} from './newComponent/new-cmp.component';
     NewCmpComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

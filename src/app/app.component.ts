@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  months = ["January", "Feburary", "March", "April", "May", 
+            "June", "July", "August", "September",
+            "October", "November", "December"];
+  displayMonths = true;
+  month = "January";
 }
