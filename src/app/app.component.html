@@ -1,5 +1,4 @@
-<!--The whole content below can be removed with the new code.-->
-<div style="text-align:center">
+<div style="text-align:center" >
   <h1>
     Welcome to {{title}}!!
   </h1>
@@ -33,7 +32,7 @@
 
 <ng-template #display>
 	<div style="margin-top: 50px"> Months :
-		<select [(ngModel)]="month">
+		<select [(ngModel)]="month" (change)="ngChange()"> <!-- ngModelChange can also be used instead of change -->
       		<option *ngFor="let i of months">{{i}}</option>
    		</select>
 	</div>

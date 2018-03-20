@@ -12,4 +12,7 @@ export class AppComponent {
             "October", "November", "December"];
   displayMonths = true;
   month = "January";
+  ngChange = function(){
+  	console.log("changed");
+  }
 }
