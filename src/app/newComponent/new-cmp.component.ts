@@ -10,6 +10,8 @@ export class NewCmpComponent implements OnInit {
 	
 
 	ngOnInit(){
-		console.log("ngOnInit is working fine");
+		setTimeout(()=>{
+			this.message = "------------ng-Init works------------";
+		},1000);
 	}
 }

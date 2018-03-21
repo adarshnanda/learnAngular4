@@ -1,4 +1,4 @@
-<div style="text-align:center" >
+<div style="text-align:center" (mousedown)="disableRightClick($event)">
   <h1>
     Welcome to {{title}}!!
   </h1>
@@ -36,6 +36,9 @@
 	   		</select>
 		</div>
 		<div>Selected Month={{month}}</div>
+    <div *ngIf="changeMessage">
+      {{changeMessage}}
+    </div>
 	</ng-template>
 	<ng-template #doNotDisplayMonths>
 		<div style="margin-top: 50px">
